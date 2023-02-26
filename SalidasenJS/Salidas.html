@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Salidas con JS</title>
+<script type="text/javascript" src="../SalidasenJS/Salidas.js"></script>
+</head>
+<body bgcolor="skyblue">
+<font size="6" face="comic sans ms">
+<p>Bienvenido a la segunda página web en donde se estará presentando los 7 tipos de salidas con las que cuenta el lenguaje de programación JavaScript para las páginas web dinámicas:</p>  
+</font>
+
+<!--ESTA ES LA SALIDA #1 -->
+
+<h2>SALIDA #1: FECHA Y HORA ACTUAL DE LA COMPUTADORA</h2>
+<p id="mirar">Dar clic en el botón de abajo para mostrar la fecha, hora y el huso horario actual de la computadora</p>  
+<button type="button" onclick="document.getElementById('mirar').innerHTML=Date()">Dar clic para ver la fecha y hora de la PC</button>    
+<br><hr>
+
+<!--ESTA ES LA SALIDA #2-->
+   
+<h2>SALIDA #2: ALERT O VENTANA EMERGENTE</h2>
+ <button type="button" onclick="alert('Estamos probando un Alert desde una ventana emergente')">Salida de un Alert en el evento Onclick</button>  
+<br><hr>    
+
+<!--ESTA ES LA SALIDA #3-->
+<h2>SALIDA #3: ALERT USANDO UNA FUNCIÓN EXTERNA </h2>
+<button type="button" onclick="salida3()">Salida de un alert usando una función externa</button>
+<hr>
+
+<!--ESTA ES LA SALIDA #4-->
+<h2>SALIDA #4: ALERT USANDO UNA FUNCIÓN EXTERNA </h2>
+<button type="button" onclick="salida4()">Salida de un Alert utilizando una función interna</button>
+<script>
+    function salida4(){
+        alert ("Este es un Alert desde una función interna de JS")
+    }
+</script>
+<hr>
+
+<!--ESTA ES LA SALIDA #5-->
+<h2>SALIDA #5: SALIDA DESDE EL CONSOLE.LOG</h2>
+<p>Esta es la salida #5 en la cual debes hacer clic 
+    derecho del mouse a la pagina web ejecutada en el cliente; 
+    luego debes seleccionar una opción Inspeccionar y despues debes 
+    dirigirte al menú superior donde se encuentra la sección llamda Console</p>
+<script>
+    console.log("Esta es una salida vista en el area de Console")
+</script>
+<hr>
+
+<!--ESTA ES LA SALIDA #6-->
+<h2>SALIDA #6: OPERACIONES ARITMETICAS DESDE EL CONSOLE.LOG</h2>
+<p>En esta salida #6 se utilizarán operaciones aritméticas directas, 
+    operaciones aritmeticas combinadas y operaciones que usen los conceptos 
+    de variables, de asignaciones y todo para ser vistos en el Console.log</p>
+<script>
+    console.log("El total de la suma es: ",250+85+1064)
+    console.log((28*4)/(-50+21)/4)
+    num1 = 56
+    num2 = 85
+    respuesta = num1 * num2
+    console.log("El producto de ",num1,"X",num2,"es: ",respuesta)
+
+</script>
+
+<!--ESTA ES LA SALIDA #7-->
+<h2>SALIDA #7: SALIDA DESDE UN WINDOW.ALERT</h2>
+<p>En esta salida #7 debes dar click en Aceptar/OK 
+    para que se cargue la página web que se tiene que 
+    visualizar correctamente </p>
+<script>
+    window.alert("Debes dar click en Aceptar/OK para continuar")
+</script>
+ 
+<center> <hr>
+<footer>
+2023 | Copyright | Derechos Reservados | Pedro Castillo
+</footer>
+</center>    
+   
+</body>
+</html>
