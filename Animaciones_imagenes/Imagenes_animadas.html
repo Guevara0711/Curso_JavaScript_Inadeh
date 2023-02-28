@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Imagenes animadas</title>
+</head>
+<body bgcolor="skyblue">
+<h2>Animación en JavaScript</h2>
+<font size="6" face="comic sans ms">
+<p>Bienvenidos a esta página web en donde veremos 4 grupos de imágenes animadas 
+    usando los escritos de HTML, JavaScript interno y el ciclo condicional IF - THEN - 
+    ELSE</p>
+</font> 
+<hr>
+
+<center>
+    <img src="off.png" alt="" id="miImagen1" onclick="cambiarImagen1()" width="170" height="282">
+    <br><strong>Por favor da varias veces clic en el mouse para cambiar la imagen del bombillo</strong>
+</center>
+
+
+<script>
+    function cambiarImagen1() { //imagen del bombillo 
+        var imagen = document.getElementById('miImagen1')
+        if (imagen.src.match("on.png")){
+            imagen.src="off.png"
+        }
+        else{
+            imagen.src="on.png"
+        }
+    }
+</script>
+
+<hr>
+
+<center>
+    <img src="apenado.png" alt="" id="miImagen2" onclick="cambiarImagen2()"  >
+    <br><strong>Por favor da varias veces clic en el mouse para cambiar la imagen y sus emociones</strong>
+</center>
+
+<script>
+    function cambiarImagen2() {//sorprendido y apenado
+        var imagen = document.getElementById('miImagen2')
+        if (imagen.src.match("apenado.png")){
+            imagen.src="sorprendido.png"
+        }
+        else{
+            imagen.src="apenado.png"
+        }
+    }
+</script>
+<hr>
+
+<center>
+    <img src="rojo.png" alt="" id="miImagen3" onclick="cambiarImagen3()" width="150" height="300">
+    <br><strong>Por favor da varias veces clic en el mouse para cambiar la imagen de las luces del semáforo</strong>
+</center>
+
+<script>
+    function cambiarImagen3(){ //semaforo
+        var imagen = document.getElementById('miImagen3')
+        if (imagen.src.match("rojo.png")){
+            imagen.src="amarillo.png"
+        } else if (imagen.src.match("amarillo.png")) {
+            imagen.src = "verde.png"
+        } else if (imagen.src.match("verde.png")){
+            imagen.src = "rojo.png"
+        }
+    }
+</script>
+<hr>
+
+<center>
+    <img src="cara1.jpg" alt="" onclick="cambiarImagen4()" id="miImagen4" width="300" height="200">
+    <br><strong>Por favor da varias veces clic en el mouse para cambiar la imagen de las expresiones</strong>
+</center>
+
+<script>
+    function cambiarImagen4(){//rostro
+        var imagen = document.getElementById('miImagen4')
+        if (imagen.src.match("cara1.jpg")){
+            imagen.src="cara2.jpg"
+        } else if (imagen.src.match("cara2.jpg")){
+            imagen.src = "cara3.jpg"
+        } else if (imagen.src.match("cara3.jpg")){
+            imagen.src="cara4.jpg"
+        } else if (imagen.src.match("cara4.jpg")){
+            imagen.src="cara1.jpg"
+        }
+    }
+</script>
+
+
+
+   
+<center> <hr>
+<footer>
+2023 | Copyright | Derechos Reservados | Pedro Castillo
+</footer>
+</center>    
+   
+</body>
+</html>
