@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Entrada de datos calificaciones</title>
+<script type="text/javascript" src=""></script>
+</head>
+<body bgcolor="skyblue">
+<h1>ENTRADA DE DATOS EN JAVASCRIPT</h1>
+<font size="6" face="comic sans ms">
+<p>En esta explicación del ejemplo veremos cómo se manipulan 
+    las entradas de datos de JavaScript para ser guradadas en 
+    memoria por medio de variables y sus tipos de datos intrínsecos 
+    reconocidos por el lenguaje de programación</p>
+</font>
+   
+<script>
+    var nombre //area de declaración de variables
+    var apellido
+    var asignatura, facultad, carrera
+    var cal1, cal2, cal3, cal4, promedio
+
+    nombre = prompt('Escriba su nombre: ')//Area de solicitud de datos 
+    apellido = prompt('Escriba su apellido: ')
+    asignatura = prompt('Ingresa el nombre de la asignatura: ')
+    facultad = prompt('Ingresa el nombre de tu facultad: ')
+    carrera = prompt('Ingrese el nombre de su carrera: ')
+    cal1 = parseFloat( prompt('Ingresa tu primera calificación: '))
+    cal2 = parseFloat( prompt('Ingresa tu segunda calificación: '))
+    cal3 = parseFloat( prompt('Ingresa tu tercera calificación: '))
+    cal4 = parseFloat( prompt('Ingresa tu cuarta calificación: '))
+
+    document.write('Estudiante ingresado: ')
+    document.write(nombre, ' ',apellido)
+    document.write('<br>Asignatura: ',asignatura)
+    document.write('<br>Facultad: ',facultad)
+    document.write('<br>Carrera: ',carrera)
+    document.write('<br>Calificación #1: ',cal1)
+    document.write('<br>Calificación #2: ',cal2)
+    document.write('<br>Calificación #3: ',cal3)
+    document.write('<br>Calificación #4: ',cal4)
+    promedio = (cal1 + cal2 + cal3 + cal4)/4
+    document.write('<br>El promedio final obtenido es: ',promedio.toFixed(2))
+
+    if (promedio >= 71){
+        document.write("<br><br><font color='green' size='5'>Haz aprobado la asignatura</font>")
+    }else{
+        document.write("<br><font color='green' size='5'>No haz aprobado la asignatura</font>")
+    }
+    
+</script>
+
+   
+<center> <hr>
+<footer>
+2023 | Copyright | Derechos Reservados | Pedro Castillo
+</footer>
+</center>    
+   
+</body>
+</html>
