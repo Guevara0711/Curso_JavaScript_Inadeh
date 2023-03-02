@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Comparar 2 números</title>
+<script type="text/javascript" src=""></script>
+</head>
+<body bgcolor="skyblue">
+<h1>ESCRIBA LOS NUMEROS A COMPARAR EN LOS CUADROS DE TEXTO</h1>
+
+<center>
+    <input type="text" name="" id="num1">
+    <input type="text" name="" id="num2">
+    <br><br>
+    <button type="button" onclick="comparar(num1.value,num2.value)">COMPARAR</button>
+</center>
+<!--
+<script>
+    function comparar(num1, num2) {
+    if (num1 > num2) {
+        alert("El primer número es mayor que el segundo");
+    } else if (num1 < num2) {
+        alert("El segundo número es mayor que el primero");
+    } else {
+        alert("Los dos números son iguales");
+    }
+}
+</script>
+-->
+
+<script>
+    function comparar(numero1, numero2){
+        var a = parseInt(numero1)
+        var b = parseInt(numero2)
+
+        if (a==b){
+            alert ("Ambos números son iguales")
+        }else if (a > b){
+            alert("El número más alto es: "+a+" y el número menor es: "+b)
+        }else if (b > a){
+            alert("El número más alto es: "+b+" y el número menor es: "+a)
+        }else if (isNaN(a) || isNaN(b)){
+            alert("Verifica... Te falta un número por escribir")
+        }
+    }
+</script>
+
+
+   
+<center> <hr>
+<footer>
+2023 | Copyright | Derechos Reservados | Pedro Castillo
+</footer>
+</center>    
+   
+</body>
+</html>
