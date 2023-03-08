@@ -96,3 +96,9 @@ function pintarPantalla(){
             break;
     }
 }
+
+function retornar(valor){
+    var producto = parseInt(valor)
+    producto = producto * 5
+    return producto
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Formulario #1</title>
+</head>
+<body bgcolor="skyblue">
+<h2>ELABORACIÓN DE UN FORMULARIO SENCILLO</h2>
+<br>
+
+<form action="formulario">
+    <b>Nombre y apellido: </b><br>
+    <input type="text" name="nombre" size="30" required>
+    <br><br>
+    <b>Fecha de nacimiento: </b><br>
+    <input type="date" name="cumple">
+    <br><br>
+    <b>Correo electrónico: </b>
+    <input type="email" name="correo" id="" required>
+    <br><br>
+    <b>Contraseña: </b>
+    <input type="password" name="contrasena" maxlength="20" required>
+    <br><br>
+    <b>Sexo</b>
+    <input type="radio" name="sexo" value="Hombre" checked="checked">Masculino
+    <input type="radio" name="sexo" value="mujer">Femenino
+    <br><br>
+    <b>Teléfono</b>
+    <input type="text" name="telefono" required>
+    <br><br>
+    <b>Escriba su consulta o comentario: </b>
+    <textarea name="comentario" id="" cols="50" rows="5" placeholder="Escriba su consulta aqui" req></textarea>
+    <br><br>
+    <b>Seleccione sus niveles de educación: </b><br>
+    <input type="checkbox" name="Bachillerato" id="">Secundaria<br>
+    <input type="checkbox" name="Técnico" id="">Técnico<br>
+    <input type="checkbox" name="Licenciatura" id="">Licenciatura<br>
+    <input type="checkbox" name="Especialidad" id="">Especialidad<br>
+    <input type="checkbox" name="Maestría" id="">Maestría<br>
+    <input type="checkbox" name="Doctorado" id="">Doctorado<br>
+    <br>
+    <b>Adjunte su hoja de vida: </b>
+    <input type="file" name="adjunto" id="">
+    <br><br>
+    <b>Seleccione su color favorito: </b>
+    <input type="color" name="colorFav" id="" value="#242424">
+    <br><br>
+    <b>Seleccione una marca y modelo de auto favorito: </b>
+    <select name="carro" id="">
+        <option value=""></option>
+        <option value="">Kia Sorento</option>
+        <option value="">Honda CRV</option>
+        <option value="">Ford Explorer</option>
+        <option value="">Kia picanto</option>
+    </select>
+</form>
+<br><br>
+
+<center>
+    <input type="submit" > &nbsp; <input type="reset" >
+</center>
+
+   
+<center> <hr>
+<footer>
+2023 | Copyright | Derechos Reservados | Pedro Castillo
+</footer>
+</center>    
+   
+</body>
+</html>

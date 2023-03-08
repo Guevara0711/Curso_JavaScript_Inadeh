@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Formulario #2</title>
+<script type="text/javascript" src="claves.js"></script>
+</head>
+<body bgcolor="skyblue">
+<h2>ELABORACIÓN DE UN FORMULARIO ESTRUCTURADO</h2>
+<br>
+
+<form action="formulario" name="form">
+    <fieldset>
+        <legend><label for=""><font color="red" ><b>Datos Personales</b></font></label></legend>
+        <label for="nombre"><b>Nombre:</b></label><br>
+        <input type="text" name="nombre" id="nombre" required>
+        <br><br>
+
+        
+        <label for="apellido"><b>Apellido:</b></label><br>
+        <input type="text" name="apellido" id="apellido" required>
+        <br><br>
+
+        <b>Fecha de nacimiento: </b>
+        <input type="date" name="cumple" required>
+        <br><br>
+
+        <label for="cedula"><b>Cédula:</b></label><br>
+        <input type="text" name="cedula" id="cedula" required>
+        <br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend><label for=""><font color="blue" ><b>Datos Conexión</b></font></label></legend>
+        <label for="usuario"><b>Nombre de usuario:</b></label><br>
+        <input type="text" name="usuario" id="usuario" required>
+        <br><br>
+
+        <b>Contraseña: </b> <br>
+        <input type="password" name="password1" maxlength="15" id="" required>
+        <br><br>
+
+        <b>Repita la contraseña: </b> <br>
+        <input type="password" name="password2" maxlength="15" id="" required>
+        <br><br>
+
+        <input type="button" value="Comprobar si son iguales" onclick=comprobarClaves()>
+    </fieldset>
+</form>
+
+<br><br>
+
+<center>
+    <input type="submit" > &nbsp; <input type="reset" >
+</center>
+
+<br><br>
+
+   
+<center> <hr>
+<footer>
+2023 | Copyright | Derechos Reservados | Pedro Castillo
+</footer>
+</center>    
+   
+</body>
+</html>
